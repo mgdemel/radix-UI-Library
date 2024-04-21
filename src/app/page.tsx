@@ -28,7 +28,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <Card>
+      <Card styles="w-96">
         <Title text="Test" styles="text-4xl font-extrabold text-orange-500" />
         <Paragraph
           text="Test 2"

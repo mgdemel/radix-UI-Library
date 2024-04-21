@@ -16,5 +16,5 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 1. Create an issue
 2. Make changes on a new branch named after the issue, for example: `issue-42`
 3. Use the imperative, present tense for commit messages. For example, ("This commit will ...") `add Button component`
-4. Make a PR and like the related issue
+4. Make a PR and link the related issue
 5. Merge to main, and delete branch

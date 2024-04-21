@@ -1,4 +1,10 @@
-import { Title, Paragraph, Card, ToggleButton } from ".././components";
+import {
+  Title,
+  Paragraph,
+  Card,
+  ToggleButton,
+  PrimaryButton
+} from ".././components";
 import {
   ArrowUpIcon,
   ArrowDownIcon,
@@ -29,6 +35,7 @@ export default function Home() {
             <ArrowDownIcon />
           </ToggleButton>
         </div>
+        <PrimaryButton text="submit" />
       </Card>
     </main>
   );

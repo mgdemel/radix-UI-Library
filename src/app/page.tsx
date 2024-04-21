@@ -3,7 +3,8 @@ import {
   Paragraph,
   Card,
   ToggleButton,
-  PrimaryButton
+  PrimaryButton,
+  TextButton
 } from ".././components";
 import {
   ArrowUpIcon,
@@ -35,7 +36,12 @@ export default function Home() {
             <ArrowDownIcon />
           </ToggleButton>
         </div>
-        <PrimaryButton text="submit" />
+        <div>
+          <PrimaryButton text="submit" />
+        </div>
+        <div>
+          <TextButton text="back" />
+        </div>
       </Card>
     </main>
   );

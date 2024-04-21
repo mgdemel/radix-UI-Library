@@ -4,7 +4,8 @@ import {
   Card,
   ToggleButton,
   PrimaryButton,
-  TextButton
+  TextButton,
+  TextInput
 } from ".././components";
 import {
   ArrowUpIcon,
@@ -41,6 +42,9 @@ export default function Home() {
         </div>
         <div>
           <TextButton text="back" />
+        </div>
+        <div>
+          <TextInput placeholder="tell us a bit more..." />
         </div>
       </Card>
     </main>

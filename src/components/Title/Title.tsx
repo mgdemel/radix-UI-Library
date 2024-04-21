@@ -3,8 +3,13 @@ import React from "react";
 
 type Props = {
   text: string;
+  styles?: string;
 };
 
-export const Title = ({ text }: Props) => {
-  return <Heading as="h1">{text}</Heading>;
+export const Title = ({ text, styles }: Props) => {
+  return (
+    <Heading as="h1" className={`${styles}`}>
+      {text}
+    </Heading>
+  );
 };

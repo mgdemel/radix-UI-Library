@@ -10,13 +10,28 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+        serif: ["Lora", "serif"]
+      },
+      fontSize: {
+        "4xl": ["2.25rem", "2.5rem"],
+        "3xl": ["1.875rem", "2.25rem"],
+        "2xl": ["1.5rem", "2rem"],
+        base: ["1rem", "1.5rem"],
+        sm: ["0.875rem", "1.25rem"]
+      },
+      spacing: {
+        2: "0.5rem",
+        4: "1rem",
+        6: "1.5rem",
+        8: "2rem"
       }
     }
   },
-  plugins: []
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light"]
+  }
 };
 export default config;

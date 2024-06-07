@@ -8,7 +8,7 @@ type Props = {
 
 export const ToggleButton = ({ children, styles }: Props) => {
   return (
-    <IconButton size="3" variant="ghost" className={`${styles}`}>
+    <IconButton size="3" variant="ghost" className={`${styles} m-1`}>
       {children}
     </IconButton>
   );

@@ -12,6 +12,7 @@ export const TextInput = ({ placeholder, variant, styles }: Props) => {
     <TextArea
       placeholder={placeholder}
       variant={variant}
+      rows={4}
       className={`${styles}`}
     />
   );

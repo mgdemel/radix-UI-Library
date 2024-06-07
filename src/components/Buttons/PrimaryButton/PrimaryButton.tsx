@@ -7,8 +7,10 @@ type Props = {
 };
 
 export const PrimaryButton = ({ text, styles }: Props) => {
+  const def =
+    "py-2 px-4 rounded font-medium text-white focus:outline-none bg-primary hover:bg-secondary";
   return (
-    <Button variant="solid" className={`${styles}`}>
+    <Button variant="solid" className={`${styles ? styles : def}`}>
       {text}
     </Button>
   );

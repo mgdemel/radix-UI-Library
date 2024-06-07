@@ -1,4 +1,4 @@
-import { Button } from "@radix-ui/themes";
+import { Link } from "@radix-ui/themes";
 import React from "react";
 
 type Props = {
@@ -7,9 +7,10 @@ type Props = {
 };
 
 export const TextButton = ({ text, styles }: Props) => {
+  const def = "py-2 px-4 text-primary focus:outline-none hover:text-secondary";
   return (
-    <Button variant="ghost" className={`${styles}`}>
+    <Link weight="regular" className={`${styles ? styles : def}`}>
       {text}
-    </Button>
+    </Link>
   );
 };

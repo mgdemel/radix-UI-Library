@@ -3,12 +3,18 @@ import React from "react";
 
 type Props = {
   children: React.ReactNode;
-  styles?: string;
+  customStyles?: string;
 };
 
-export const ToggleButton = ({ children, styles }: Props) => {
+export const ToggleButton = ({ children, customStyles }: Props) => {
+  const baseStyles = "m-1 ";
+  const primary = " ";
   return (
-    <IconButton size="3" variant="ghost" className={`${styles} m-1`}>
+    <IconButton
+      size="3"
+      variant="ghost"
+      className={`${baseStyles + customStyles ? customStyles : primary}`}
+    >
       {children}
     </IconButton>
   );

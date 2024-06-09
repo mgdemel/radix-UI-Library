@@ -1,14 +1,18 @@
 import { Heading } from "@radix-ui/themes";
-import React from "react";
 
 type Props = {
   text: string;
-  styles?: string;
+  customStyles?: string;
 };
 
-export const Title = ({ text, styles }: Props) => {
+export const Title = ({ text, customStyles }: Props) => {
+  const baseStyles = "m-1 ";
+  const primary = " ";
   return (
-    <Heading as="h1" className={`${styles}`}>
+    <Heading
+      as="h1"
+      className={`${baseStyles + (customStyles ? customStyles : primary)}`}
+    >
       {text}
     </Heading>
   );

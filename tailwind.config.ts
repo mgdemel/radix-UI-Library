@@ -28,10 +28,6 @@ const config: Config = {
         8: "2rem"
       }
     }
-  },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["light"]
   }
 };
 export default config;

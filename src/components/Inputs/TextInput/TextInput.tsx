@@ -1,19 +1,19 @@
 import { TextArea } from "@radix-ui/themes";
-import React from "react";
 
 type Props = {
   placeholder?: string;
-  variant?: "classic" | "soft" | "surface" | undefined;
-  styles?: string;
+  rows?: number;
+  customStyles?: string;
 };
 
-export const TextInput = ({ placeholder, variant, styles }: Props) => {
+export const TextInput = ({ placeholder, rows, customStyles }: Props) => {
+  const baseStyles = "m-1 ";
+  const primary = " ";
   return (
     <TextArea
       placeholder={placeholder}
-      variant={variant}
-      rows={4}
-      className={`${styles}`}
+      rows={rows || 4}
+      className={`${baseStyles + (customStyles ? customStyles : primary)}`}
     />
   );
 };

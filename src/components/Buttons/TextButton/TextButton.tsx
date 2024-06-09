@@ -1,15 +1,18 @@
 import { Link } from "@radix-ui/themes";
-import React from "react";
 
 type Props = {
   text: string;
-  styles?: string;
+  customStyles?: string;
 };
 
-export const TextButton = ({ text, styles }: Props) => {
-  const def = "py-2 px-4 text-primary focus:outline-none hover:text-secondary";
+export const TextButton = ({ text, customStyles }: Props) => {
+  const baseStyles = "py-2 px-4 focus:outline-none ";
+  const primary = " ";
   return (
-    <Link weight="regular" className={`${styles ? styles : def}`}>
+    <Link
+      weight="regular"
+      className={`${baseStyles + (customStyles ? customStyles : primary)}`}
+    >
       {text}
     </Link>
   );

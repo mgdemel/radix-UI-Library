@@ -1,16 +1,19 @@
 import { Button } from "@radix-ui/themes";
-import React from "react";
 
 type Props = {
   text: string;
-  styles?: string;
+  customStyles?: string;
 };
 
-export const PrimaryButton = ({ text, styles }: Props) => {
-  const def =
-    "py-2 px-4 rounded font-medium text-white focus:outline-none bg-primary hover:bg-secondary";
+export const PrimaryButton = ({ text, customStyles }: Props) => {
+  const baseStyles =
+    "py-2 px-4 rounded font-medium text-white focus:outline-none ";
+  const primary = " ";
   return (
-    <Button variant="solid" className={`${styles ? styles : def}`}>
+    <Button
+      variant="solid"
+      className={`${baseStyles + (customStyles ? customStyles : primary)}`}
+    >
       {text}
     </Button>
   );

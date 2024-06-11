@@ -1,5 +1,5 @@
-import { Title } from "@/components";
-import { Card } from ".././modules";
+import { Paragraph, Title } from "@/components";
+import { Accordion, Card } from ".././modules";
 import { CTA } from ".././sections";
 
 export default function Home() {
@@ -25,6 +25,12 @@ export default function Home() {
       </div>
       <div className="my-12 w-full">
         <CTA />
+      </div>
+      <div className="my-12 w-full">
+        <Accordion
+          trigger={<Title text="Our services" />}
+          content={<Paragraph text="They always come with a smile! :)" />}
+        />
       </div>
 
       <footer className="p-4 text-center w-full">

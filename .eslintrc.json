@@ -1,6 +1,12 @@
 {
-  "extends": ["next/core-web-vitals", "eslint:recommended", "prettier"],
-  "plugins": ["unused-imports"],
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "prettier",
+    "plugin:sonarjs/recommended-legacy"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["unused-imports", "sonarjs"],
   "globals": {
     "JSX": "readonly"
   }

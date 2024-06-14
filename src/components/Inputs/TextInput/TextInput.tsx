@@ -12,8 +12,8 @@ export const TextInput = ({ placeholder, rows, customStyles }: Props) => {
   return (
     <TextArea
       placeholder={placeholder}
-      rows={rows || 4}
-      className={`${baseStyles + (customStyles ? customStyles : primary)}`}
+      rows={rows ?? 4}
+      className={`${baseStyles + (customStyles ?? primary)}`}
     />
   );
 };

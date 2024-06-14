@@ -1,1 +1,1 @@
-export { CTA } from "./CTA";
+export { CallToActionBanner } from "./CallToActionBanner";

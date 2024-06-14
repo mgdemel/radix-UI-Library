@@ -11,7 +11,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Theme accentColor="crimson" grayColor="sand" radius="large">{children}</Theme>
+        <Theme accentColor="crimson" grayColor="sand" radius="large">
+          {children}
+        </Theme>
       </body>
     </html>
   );

@@ -13,7 +13,7 @@ export const ToggleButton = ({ children, customStyles }: Props) => {
     <IconButton
       size="3"
       variant="ghost"
-      className={`${baseStyles + customStyles ? customStyles : primary}`}
+      className={`${baseStyles + (customStyles ?? primary)}`}
     >
       {children}
     </IconButton>

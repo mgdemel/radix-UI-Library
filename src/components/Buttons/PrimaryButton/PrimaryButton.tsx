@@ -12,7 +12,7 @@ export const PrimaryButton = ({ text, customStyles }: Props) => {
   return (
     <Button
       variant="solid"
-      className={`${baseStyles + (customStyles ? customStyles : primary)}`}
+      className={`${baseStyles + (customStyles ?? primary)}`}
     >
       {text}
     </Button>

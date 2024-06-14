@@ -11,7 +11,7 @@ export const TextButton = ({ text, customStyles }: Props) => {
   return (
     <Link
       weight="regular"
-      className={`${baseStyles + (customStyles ? customStyles : primary)}`}
+      className={`${baseStyles + (customStyles ?? primary)}`}
     >
       {text}
     </Link>

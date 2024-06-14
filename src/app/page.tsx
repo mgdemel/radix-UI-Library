@@ -1,6 +1,6 @@
 import { Title } from "@/components";
 import { Accordion, Card } from ".././modules";
-import { CTA } from ".././sections";
+import { CallToActionBanner } from ".././sections";
 
 export default function Home() {
   const items = [
@@ -25,15 +25,15 @@ export default function Home() {
       <header className="p-4 w-full mb-12">
         <Title text="Page heading" />
         <nav className="mt-2">
-          <a href="#" className="text-lg font-medium mr-4 hover:underline">
+          <button className="text-lg font-medium mr-4 hover:underline">
             Home
-          </a>
-          <a href="#" className="text-lg font-medium mr-4 hover:underline">
+          </button>
+          <button className="text-lg font-medium mr-4 hover:underline">
             About
-          </a>
-          <a href="#" className="text-lg font-medium hover:underline">
+          </button>
+          <button className="text-lg font-medium hover:underline">
             Contact
-          </a>
+          </button>
         </nav>
       </header>
 
@@ -41,7 +41,7 @@ export default function Home() {
         <Card />
       </div>
       <div className="my-12 w-full">
-        <CTA />
+        <CallToActionBanner />
       </div>
       <div className="my-12 w-full">
         <Accordion items={items} />
@@ -50,12 +50,10 @@ export default function Home() {
       <footer className="p-4 text-center w-full">
         <p className="text-sm"> © 2024 copyright.</p>
         <nav className="mt-2">
-          <a href="#" className="text-sm mr-4 hover:underline">
+          <button className="text-sm mr-4 hover:underline">
             Privacy Policy
-          </a>
-          <a href="#" className="text-sm hover:underline">
-            Terms of Service
-          </a>
+          </button>
+          <button className="text-sm hover:underline">Terms of Service</button>
         </nav>
       </footer>
     </main>

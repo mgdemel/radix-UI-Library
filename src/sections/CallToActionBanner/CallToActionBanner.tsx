@@ -1,6 +1,6 @@
 import { Paragraph, PrimaryButton, Title } from "@/components";
 
-export const CTA = () => {
+export const CallToActionBanner = () => {
   return (
     <section className="p-10 w-full">
       <div className="mx-auto flex-col flex items-center justify-center gap-1">

@@ -1,5 +1,4 @@
-import { Checkbox as RadixCheckbox } from "@radix-ui/themes";
-import { Text as RadixText } from "@radix-ui/themes";
+import { Checkbox as RadixCheckbox, Text as RadixText } from "@radix-ui/themes";
 
 type Props = {
   label: string;

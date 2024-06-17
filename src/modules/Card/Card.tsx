@@ -1,6 +1,7 @@
 import {
   Text,
   PrimaryButton,
+  SecondaryButton,
   TextInput,
   Heading,
   ToggleButton
@@ -35,10 +36,9 @@ export const ContentCard = () => {
       <div className="p-4">
         <TextInput placeholder="tell us a bit more..." />
       </div>
-      <div className="flex flex-row p-4">
-        <div>
-          <PrimaryButton text="submit" />
-        </div>
+      <div className="flex flex-row justify-between p-4">
+        <PrimaryButton size="3" text="submit" />
+        <SecondaryButton size="3" text="cancel" />
       </div>
     </Card>
   );

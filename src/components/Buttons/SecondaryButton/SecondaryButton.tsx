@@ -6,12 +6,12 @@ type Props = {
   customStyles?: string;
 };
 
-export const PrimaryButton = ({ text, size, customStyles }: Props) => {
-  const baseStyles = "py-2 px-4 rounded font-medium focus:outline-none ";
+export const SecondaryButton = ({ text, size, customStyles }: Props) => {
+  const baseStyles = "py-2 px-4 rounded font-medium ";
   return (
     <Button
       size={size}
-      variant="solid"
+      variant="surface"
       className={`${baseStyles + customStyles}`}
     >
       {text}

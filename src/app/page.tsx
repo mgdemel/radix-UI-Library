@@ -1,4 +1,4 @@
-import { Heading, Blockquote, Text } from "@/components";
+import { Heading, Blockquote, Text, TextButton } from "@/components";
 import { Accordion, Card } from ".././modules";
 import { CallToActionBanner } from ".././sections";
 
@@ -25,15 +25,18 @@ export default function Home() {
       <header className="p-4 w-full mb-12">
         <Heading level="h1" size="8" text="Page heading" />
         <nav className="mt-2">
-          <button className="text-lg font-medium mr-4 hover:underline">
-            Home
-          </button>
-          <button className="text-lg font-medium mr-4 hover:underline">
-            About
-          </button>
-          <button className="text-lg font-medium hover:underline">
-            Contact
-          </button>
+          <TextButton
+            text="Home"
+            customStyles="text-lg font-medium hover:underline"
+          />
+          <TextButton
+            text="About"
+            customStyles="text-lg font-medium hover:underline"
+          />
+          <TextButton
+            text="Contact"
+            customStyles="text-lg font-medium hover:underline"
+          />
         </nav>
       </header>
 
@@ -56,10 +59,14 @@ export default function Home() {
       <footer className="p-4 text-center w-full">
         <Text type="p" content="© 2024 copyright." size="1" />
         <nav className="mt-2">
-          <button className="text-sm mr-4 hover:underline">
-            Privacy Policy
-          </button>
-          <button className="text-sm hover:underline">Terms of Service</button>
+          <TextButton
+            text="Privacy Policy"
+            customStyles="text-sm mr-4 hover:underline"
+          />
+          <TextButton
+            text="Terms of Service"
+            customStyles="text-sm mr-4 hover:underline"
+          />
         </nav>
       </footer>
     </main>

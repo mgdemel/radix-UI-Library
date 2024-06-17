@@ -1,3 +1,3 @@
 export { Blockquote } from "./Blockquote";
 export { Paragraph } from "./Paragraph";
-export { Title } from "./Title";
+export { Heading } from "./Heading";

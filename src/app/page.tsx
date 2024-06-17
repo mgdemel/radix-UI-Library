@@ -1,4 +1,4 @@
-import { Title, Blockquote } from "@/components";
+import { Heading, Blockquote } from "@/components";
 import { Accordion, Card } from ".././modules";
 import { CallToActionBanner } from ".././sections";
 
@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 w-full">
       <header className="p-4 w-full mb-12">
-        <Title text="Page heading" />
+        <Heading level="h1" size="8" text="Page heading" />
         <nav className="mt-2">
           <button className="text-lg font-medium mr-4 hover:underline">
             Home

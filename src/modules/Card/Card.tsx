@@ -2,7 +2,7 @@ import {
   Paragraph,
   PrimaryButton,
   TextInput,
-  Title,
+  Heading,
   ToggleButton
 } from "@/components";
 import {
@@ -16,7 +16,7 @@ import { Card } from "@radix-ui/themes";
 export const ContentCard = () => {
   return (
     <Card variant="classic" className="w-96 p-10">
-      <Title text="Card title" customStyles="font-bold" />
+      <Heading level="h2" size="6" text="Card Heading" />
       <Paragraph text="Test 2" customStyles="mt-2" />
       <div>
         <ToggleButton>

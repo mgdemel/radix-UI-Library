@@ -37,7 +37,11 @@ export default function Home() {
         </nav>
       </header>
 
-      <Blockquote text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac felis non leo fringilla volutpat. Duis sed leo et sem auctor rhoncus. Curabitur pellentesque urna nec tortor iaculis dignissim." />
+      <Blockquote
+        size="5"
+        weight="medium"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac felis non leo fringilla volutpat. Duis sed leo et sem auctor rhoncus. Curabitur pellentesque urna nec tortor iaculis dignissim."
+      />
 
       <div className="my-12">
         <Card />

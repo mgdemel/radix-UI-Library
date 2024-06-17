@@ -1,5 +1,5 @@
 import {
-  Paragraph,
+  Text,
   PrimaryButton,
   TextInput,
   Heading,
@@ -17,7 +17,7 @@ export const ContentCard = () => {
   return (
     <Card variant="classic" className="w-96 p-10">
       <Heading level="h2" size="6" text="Card Heading" />
-      <Paragraph text="Test 2" customStyles="mt-2" />
+      <Text content="Test 2" type="p" size="4" customStyles="pt-2" />
       <div>
         <ToggleButton>
           <ArrowUpIcon />

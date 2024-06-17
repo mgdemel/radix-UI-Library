@@ -1,4 +1,4 @@
-import { Heading, Blockquote } from "@/components";
+import { Heading, Blockquote, Text } from "@/components";
 import { Accordion, Card } from ".././modules";
 import { CallToActionBanner } from ".././sections";
 
@@ -54,7 +54,7 @@ export default function Home() {
       </div>
 
       <footer className="p-4 text-center w-full">
-        <p className="text-sm"> © 2024 copyright.</p>
+        <Text type="p" content="© 2024 copyright." size="1" />
         <nav className="mt-2">
           <button className="text-sm mr-4 hover:underline">
             Privacy Policy

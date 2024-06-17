@@ -1,4 +1,4 @@
-import { Heading, Blockquote, Text, TextButton } from "@/components";
+import { Heading, Blockquote, Text, TextButton, Checkbox } from "@/components";
 import { Accordion, Card } from ".././modules";
 import { CallToActionBanner } from ".././sections";
 
@@ -55,6 +55,8 @@ export default function Home() {
       <div className="my-12 w-full">
         <Accordion items={items} />
       </div>
+
+      <Checkbox label="Agree to Terms and Conditions" />
 
       <footer className="p-4 text-center w-full">
         <Text type="p" content="© 2024 copyright." size="1" />

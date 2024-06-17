@@ -9,7 +9,10 @@ export const Paragraph = ({ text, customStyles }: Props) => {
   const baseStyles = "m-1 ";
   const primary = " ";
   return (
-    <Text as="p" className={`${baseStyles + (customStyles ?? primary)}`}>
+    <Text
+      as="p"
+      className={`${baseStyles + (customStyles ? customStyles : primary)}`}
+    >
       {text}
     </Text>
   );

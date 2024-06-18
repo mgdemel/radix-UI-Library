@@ -7,7 +7,12 @@ type Props = {
 
 export const Checkbox = ({ label, size }: Props) => {
   return (
-    <RadixText as="label" size="2" className="flex gap-2">
+    <RadixText
+      as="label"
+      size={size}
+      trim="both"
+      className="flex gap-2 items-center leading-none"
+    >
       <RadixCheckbox size={size} variant="surface" highContrast />
       {label}
     </RadixText>

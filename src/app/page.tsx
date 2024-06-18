@@ -63,7 +63,7 @@ export default function Home() {
         <Accordion items={items} />
       </div>
 
-      <Checkbox label="Agree to Terms and Conditions" />
+      <Checkbox size="3" label="Agree to Terms and Conditions" />
 
       <Radio value="1" size="3" label="Option 1" />
       <Radio value="2" size="3" label="Option 2" />

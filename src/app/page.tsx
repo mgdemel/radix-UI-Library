@@ -4,10 +4,12 @@ import {
   Text,
   TextButton,
   Checkbox,
-  Radio
+  Radio,
+  Icon
 } from "@/components";
 import { Accordion, Card } from ".././modules";
 import { CallToActionBanner } from ".././sections";
+import { ArrowBottomRightIcon } from "@radix-ui/react-icons";
 
 export default function Home() {
   const items = [
@@ -68,6 +70,10 @@ export default function Home() {
       <Radio value="1" size="3" label="Option 1" />
       <Radio value="2" size="3" label="Option 2" />
       <Radio value="3" size="3" label="Option 3" />
+
+      <Icon label="Arrow pointing to bottom right icon">
+        <ArrowBottomRightIcon />
+      </Icon>
 
       <footer className="p-4 text-center w-full">
         <Text type="p" content="© 2024 copyright." size="1" />

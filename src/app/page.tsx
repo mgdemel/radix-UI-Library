@@ -5,7 +5,8 @@ import {
   TextButton,
   Checkbox,
   Radio,
-  Icon
+  Icon,
+  Chip
 } from "@/components";
 import { Accordion, Card } from ".././modules";
 import { CallToActionBanner } from ".././sections";
@@ -74,6 +75,13 @@ export default function Home() {
       <Icon label="Arrow pointing to bottom right icon">
         <ArrowBottomRightIcon />
       </Icon>
+
+      <div className="flex flex-row justify-between gap-2">
+        <Chip label="tag1" size="2" color="pink" />
+        <Chip label="tag2" size="2" color="purple" />
+        <Chip label="tag3" size="2" color="plum" />
+        <Chip label="tag4" size="2" color="violet" />
+      </div>
 
       <footer className="p-4 text-center w-full">
         <Text type="p" content="© 2024 copyright." size="1" />

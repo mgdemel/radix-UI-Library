@@ -4,7 +4,7 @@ import {
   SecondaryButton,
   TextInput,
   Heading,
-  ToggleButton
+  IconButton
 } from "@/components";
 import {
   ArrowBottomRightIcon,
@@ -16,27 +16,27 @@ import { Card } from "@radix-ui/themes";
 
 export const ContentCard = () => {
   return (
-    <Card variant="classic" className="w-96 p-10">
-      <Heading level="h2" size="6" text="Card Heading" />
-      <Text content="Test 2" type="p" size="4" customStyles="pt-2" />
-      <div>
-        <ToggleButton>
+    <Card variant="classic" className="w-96 p-8">
+      <Heading level="h2" size="6" text="Card Heading" customStyles="p-2" />
+      <Text content="Card paragraph" type="p" size="4" customStyles="p-2" />
+      <div className="flex justify-between px-2 py-4">
+        <IconButton size="3">
           <ArrowUpIcon />
-        </ToggleButton>
-        <ToggleButton>
+        </IconButton>
+        <IconButton size="3">
           <ArrowTopLeftIcon />
-        </ToggleButton>
-        <ToggleButton>
+        </IconButton>
+        <IconButton size="3">
           <ArrowBottomRightIcon />
-        </ToggleButton>
-        <ToggleButton>
+        </IconButton>
+        <IconButton size="3">
           <ArrowDownIcon />
-        </ToggleButton>
+        </IconButton>
       </div>
-      <div className="p-4">
+      <div className="px-2 pb-4">
         <TextInput placeholder="tell us a bit more..." />
       </div>
-      <div className="flex flex-row justify-between p-4">
+      <div className="flex flex-row justify-between p-2">
         <PrimaryButton size="3" text="submit" />
         <SecondaryButton size="3" text="cancel" />
       </div>

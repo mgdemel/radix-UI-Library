@@ -1,11 +1,11 @@
-import { Checkbox as RadixCheckbox, Text as RadixText } from "@radix-ui/themes";
+import { Radio as RadixRadio, Text as RadixText } from "@radix-ui/themes";
 
 type Props = {
+  value: string;
   label: string;
   size?: "1" | "2" | "3";
 };
-
-export const Checkbox = ({ label, size }: Props) => {
+export const Radio = ({ value, label, size }: Props) => {
   return (
     <RadixText
       as="label"
@@ -13,7 +13,7 @@ export const Checkbox = ({ label, size }: Props) => {
       trim="both"
       className="flex gap-2 items-center leading-none"
     >
-      <RadixCheckbox size={size} variant="surface" highContrast />
+      <RadixRadio value={value} size={size} variant="surface" highContrast />
       {label}
     </RadixText>
   );

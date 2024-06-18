@@ -1,4 +1,11 @@
-import { Heading, Blockquote, Text, TextButton, Checkbox } from "@/components";
+import {
+  Heading,
+  Blockquote,
+  Text,
+  TextButton,
+  Checkbox,
+  Radio
+} from "@/components";
 import { Accordion, Card } from ".././modules";
 import { CallToActionBanner } from ".././sections";
 
@@ -56,7 +63,11 @@ export default function Home() {
         <Accordion items={items} />
       </div>
 
-      <Checkbox label="Agree to Terms and Conditions" />
+      <Checkbox size="3" label="Agree to Terms and Conditions" />
+
+      <Radio value="1" size="3" label="Option 1" />
+      <Radio value="2" size="3" label="Option 2" />
+      <Radio value="3" size="3" label="Option 3" />
 
       <footer className="p-4 text-center w-full">
         <Text type="p" content="© 2024 copyright." size="1" />

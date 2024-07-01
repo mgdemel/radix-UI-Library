@@ -8,7 +8,7 @@ import {
   Icon,
   Chip
 } from "@/components";
-import { Accordion, Card } from ".././modules";
+import { Accordion, AuthTabs, Card } from ".././modules";
 import { CallToActionBanner } from ".././sections";
 import { ArrowBottomRightIcon } from "@radix-ui/react-icons";
 
@@ -49,6 +49,8 @@ export default function Home() {
           />
         </nav>
       </header>
+
+      <AuthTabs />
 
       <Blockquote
         size="5"

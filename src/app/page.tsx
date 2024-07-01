@@ -13,7 +13,7 @@ import {
   PrimaryButton,
   SecondaryButton
 } from "@/components";
-import { Accordion, AuthTabs } from ".././modules";
+import { Accordion, AuthTabs, TabBar } from ".././modules";
 import { CallToActionBanner } from ".././sections";
 import {
   ArrowBottomRightIcon,
@@ -21,9 +21,10 @@ import {
   ArrowTopLeftIcon,
   ArrowUpIcon
 } from "@radix-ui/react-icons";
+import { TabItem } from "@/modules/TabBar/TabBarItem";
 
 export default function Home() {
-  const items = [
+  const accordionItems = [
     {
       id: "item 1",
       header: "Item 1",
@@ -40,6 +41,7 @@ export default function Home() {
       content: "Here is the content hiding in item 3"
     }
   ];
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 w-full">
       <header className="p-4 w-full mb-12">
@@ -61,6 +63,20 @@ export default function Home() {
       </header>
 
       <AuthTabs />
+
+      <Card>
+        <TabBar label="tab bar">
+          <TabItem value="tab 1">
+            <Text content="Here is a paragraph in tab 1" type="p" />
+          </TabItem>
+          <TabItem value="tab 2">
+            <Text content="Here is a paragraph in tab 2" type="p" />
+          </TabItem>
+          <TabItem value="tab 3">
+            <Text content="Here is a paragraph in tab 3" type="p" />
+          </TabItem>
+        </TabBar>
+      </Card>
 
       <Blockquote
         size="5"
@@ -99,7 +115,7 @@ export default function Home() {
         <CallToActionBanner />
       </div>
       <div className="my-12 w-full">
-        <Accordion items={items} />
+        <Accordion items={accordionItems} />
       </div>
 
       <Checkbox size="3" label="Agree to Terms and Conditions" />

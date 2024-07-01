@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import { PrimaryButton, Text } from "@/components";
-import { Card, Tabs } from "@radix-ui/themes";
+import { Card, PrimaryButton, Text } from "@/components";
+import { Tabs } from "@radix-ui/themes";
 
 export const AuthTabs = () => {
   return (
-    <Card variant="classic" className="w-96 p-8">
+    <Card>
       <Tabs.Root className="flex flex-col" defaultValue="login">
         <Tabs.List
           color="crimson"

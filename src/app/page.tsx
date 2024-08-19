@@ -1,3 +1,4 @@
+"use client";
 import {
   Heading,
   Blockquote,
@@ -42,6 +43,8 @@ export default function Home() {
     }
   ];
 
+  const tempStr = "I am clicked!";
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 w-full">
       <header className="p-4 w-full mb-12">
@@ -50,14 +53,17 @@ export default function Home() {
           <TextButton
             text="Home"
             customStyles="text-lg font-medium hover:underline"
+            onClick={() => console.log(tempStr)}
           />
           <TextButton
             text="About"
             customStyles="text-lg font-medium hover:underline"
+            onClick={() => console.log(tempStr)}
           />
           <TextButton
             text="Contact"
             customStyles="text-lg font-medium hover:underline"
+            onClick={() => console.log(tempStr)}
           />
         </nav>
       </header>
@@ -89,16 +95,16 @@ export default function Home() {
           <Heading level="h2" size="6" text="Card Heading" customStyles="p-2" />
           <Text content="Card paragraph" type="p" size="4" customStyles="p-2" />
           <div className="flex justify-between px-2 py-4">
-            <IconButton size="3">
+            <IconButton size="3" onClick={() => console.log(tempStr)}>
               <ArrowUpIcon />
             </IconButton>
-            <IconButton size="3">
+            <IconButton size="3" onClick={() => console.log(tempStr)}>
               <ArrowTopLeftIcon />
             </IconButton>
-            <IconButton size="3">
+            <IconButton size="3" onClick={() => console.log(tempStr)}>
               <ArrowBottomRightIcon />
             </IconButton>
-            <IconButton size="3">
+            <IconButton size="3" onClick={() => console.log(tempStr)}>
               <ArrowDownIcon />
             </IconButton>
           </div>
@@ -106,8 +112,16 @@ export default function Home() {
             <TextInput placeholder="tell us a bit more..." />
           </div>
           <div className="flex flex-row justify-between p-2">
-            <PrimaryButton size="3" text="submit" />
-            <SecondaryButton size="3" text="cancel" />
+            <PrimaryButton
+              size="3"
+              text="submit"
+              onClick={() => console.log(tempStr)}
+            />
+            <SecondaryButton
+              size="3"
+              text="cancel"
+              onClick={() => console.log(tempStr)}
+            />
           </div>
         </Card>
       </div>
@@ -141,10 +155,12 @@ export default function Home() {
           <TextButton
             text="Privacy Policy"
             customStyles="text-sm mr-4 hover:underline"
+            onClick={() => console.log(tempStr)}
           />
           <TextButton
             text="Terms of Service"
             customStyles="text-sm mr-4 hover:underline"
+            onClick={() => console.log(tempStr)}
           />
         </nav>
       </footer>

@@ -2,7 +2,7 @@ import { Link } from "@radix-ui/themes";
 
 type Props = {
   text: string;
-  onClick: () => void;
+  onClick?: () => void;
   customStyles?: string;
 };
 

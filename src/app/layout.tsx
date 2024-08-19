@@ -10,7 +10,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning={true}>
         <Theme accentColor="crimson" grayColor="sand" radius="large">
           {children}
         </Theme>

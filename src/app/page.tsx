@@ -14,7 +14,14 @@ import {
   PrimaryButton,
   SecondaryButton
 } from "@/components";
-import { Accordion, AuthTabs, TabBar } from ".././modules";
+import {
+  Accordion,
+  AuthTabs,
+  TabBar,
+  Modal,
+  ModalContent,
+  ModalTrigger
+} from ".././modules";
 import { CallToActionBanner } from ".././sections";
 import {
   ArrowBottomRightIcon,
@@ -68,30 +75,11 @@ export default function Home() {
         </nav>
       </header>
 
-      <AuthTabs />
-
-      <Card>
-        <TabBar label="tab bar">
-          <TabItem value="tab 1">
-            <Text content="Here is a paragraph in tab 1" type="p" />
-          </TabItem>
-          <TabItem value="tab 2">
-            <Text content="Here is a paragraph in tab 2" type="p" />
-          </TabItem>
-          <TabItem value="tab 3">
-            <Text content="Here is a paragraph in tab 3" type="p" />
-          </TabItem>
-        </TabBar>
-      </Card>
-
-      <Blockquote
-        size="5"
-        weight="medium"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac felis non leo fringilla volutpat. Duis sed leo et sem auctor rhoncus. Curabitur pellentesque urna nec tortor iaculis dignissim."
-      />
-
-      <div className="my-12">
-        <Card>
+      <Modal>
+        <ModalTrigger>
+          <TextButton text="Open modal"></TextButton>
+        </ModalTrigger>
+        <ModalContent modalTitle="modal">
           <Heading level="h2" size="6" text="Card Heading" customStyles="p-2" />
           <Text content="Card paragraph" type="p" size="4" customStyles="p-2" />
           <div className="flex justify-between px-2 py-4">
@@ -123,8 +111,31 @@ export default function Home() {
               onClick={() => console.log(tempStr)}
             />
           </div>
-        </Card>
-      </div>
+        </ModalContent>
+      </Modal>
+
+      <AuthTabs />
+
+      <Card>
+        <TabBar label="tab bar">
+          <TabItem value="tab 1">
+            <Text content="Here is a paragraph in tab 1" type="p" />
+          </TabItem>
+          <TabItem value="tab 2">
+            <Text content="Here is a paragraph in tab 2" type="p" />
+          </TabItem>
+          <TabItem value="tab 3">
+            <Text content="Here is a paragraph in tab 3" type="p" />
+          </TabItem>
+        </TabBar>
+      </Card>
+
+      <Blockquote
+        size="5"
+        weight="medium"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac felis non leo fringilla volutpat. Duis sed leo et sem auctor rhoncus. Curabitur pellentesque urna nec tortor iaculis dignissim."
+      />
+
       <div className="my-12 w-full">
         <CallToActionBanner />
       </div>

@@ -1,0 +1,43 @@
+import { useContainer } from "@/context";
+import * as Dialog from "@radix-ui/react-dialog";
+import { Cross1Icon } from "@radix-ui/react-icons";
+import { VisuallyHidden } from "@radix-ui/themes";
+import React, { useEffect, useState } from "react";
+
+type Props = {
+  modalTitle: string;
+  children: React.ReactNode;
+};
+
+export const ModalContent = ({ modalTitle, children }: Props) => {
+  const containerRef = useContainer();
+  const [container, setContainer] = useState<HTMLElement | null>(null);
+
+  useEffect(() => {
+    if (containerRef?.current) {
+      setContainer(containerRef.current);
+    }
+  }, [containerRef]);
+
+  if (!container) {
+    return null;
+  }
+
+  return (
+    <Dialog.Portal container={container}>
+      <Dialog.Overlay className="fixed inset-0 bg-black/50" />
+      <Dialog.Content className="fixed left-1/2 top-1/2 w-full max-w-md -translate-x-1/2 -translate-y-1/2 rounded-md bg-white p-8">
+        <VisuallyHidden asChild>
+          <Dialog.Title>{modalTitle}</Dialog.Title>
+        </VisuallyHidden>
+        <Dialog.Close aria-label="Close">
+          <Cross1Icon />
+        </Dialog.Close>
+        {children}
+      </Dialog.Content>
+    </Dialog.Portal>
+  );
+};
+
+export const Modal = Dialog.Root;
+export const ModalTrigger = Dialog.Trigger;

@@ -1,10 +1,10 @@
-import { Color } from "@/utils/types";
+import { Color, DetailSize, Radius } from "@/utils/types";
 import { Badge } from "@radix-ui/themes";
 
 type Props = {
   label: string;
-  size?: "1" | "2" | "3";
-  radius?: "small" | "medium" | "large" | "full";
+  size?: DetailSize;
+  radius?: Radius;
   color?: Color;
 };
 

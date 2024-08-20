@@ -1,11 +1,12 @@
+import { TextAlign, TextLevel, TextSize, TextWeight } from "@/utils/types";
 import { Heading as RadixHeading } from "@radix-ui/themes";
 
 type Props = {
   text: string;
-  level: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-  size?: "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9";
-  weight?: "light" | "regular" | "medium" | "bold";
-  align?: "left" | "center" | "right";
+  level: TextLevel;
+  size?: TextSize;
+  weight?: TextWeight;
+  align?: TextAlign;
   customStyles?: string;
 };
 

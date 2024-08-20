@@ -1,8 +1,9 @@
+import { DetailSize } from "@/utils/types";
 import { Checkbox as RadixCheckbox, Text as RadixText } from "@radix-ui/themes";
 
 type Props = {
   label: string;
-  size?: "1" | "2" | "3";
+  size?: DetailSize;
 };
 
 export const Checkbox = ({ label, size }: Props) => {

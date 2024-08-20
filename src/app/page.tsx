@@ -13,6 +13,7 @@ import {
   Accordion,
   AuthTabs,
   TabBar,
+  TabBarItem,
   Modal,
   ModalContent,
   ModalTrigger
@@ -24,7 +25,6 @@ import {
   ArrowTopLeftIcon,
   ArrowUpIcon
 } from "@radix-ui/react-icons";
-import { TabItem } from "@/modules/TabBar/TabBarItem";
 
 export default function Home() {
   const accordionItems = [
@@ -92,15 +92,15 @@ export default function Home() {
 
       <div className="my-12 w-1/3">
         <TabBar label="tab bar">
-          <TabItem value="tab 1">
+          <TabBarItem value="tab 1">
             <Text text="Here is a paragraph in tab 1" type="p" />
-          </TabItem>
-          <TabItem value="tab 2">
+          </TabBarItem>
+          <TabBarItem value="tab 2">
             <Text text="Here is a paragraph in tab 2" type="p" />
-          </TabItem>
-          <TabItem value="tab 3">
+          </TabBarItem>
+          <TabBarItem value="tab 3">
             <Text text="Here is a paragraph in tab 3" type="p" />
-          </TabItem>
+          </TabBarItem>
         </TabBar>
       </div>
 

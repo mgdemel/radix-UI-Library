@@ -3,7 +3,7 @@ import { PrimaryButton } from "../PrimaryButton";
 import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof PrimaryButton> = {
-  title: "PrimaryButton",
+  title: "Components/Buttons",
   component: PrimaryButton,
   decorators: [
     (Story) => (
@@ -24,7 +24,7 @@ export default meta;
 
 type Story = StoryObj<typeof PrimaryButton>;
 
-export const Button: Story = {
+export const Primary: Story = {
   args: {
     text: "submit",
     onClick: () => console.log("Button")

@@ -3,7 +3,7 @@ import { Checkbox } from "../Checkbox";
 import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof Checkbox> = {
-  title: "Checkbox",
+  title: "Components/Inputs",
   component: Checkbox,
   decorators: [
     (Story) => (

@@ -3,7 +3,7 @@ import { TextButton } from "../TextButton";
 import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof TextButton> = {
-  title: "TextButton",
+  title: "Components/Buttons",
   component: TextButton,
   decorators: [
     (Story) => (
@@ -24,7 +24,7 @@ export default meta;
 
 type Story = StoryObj<typeof TextButton>;
 
-export const Button: Story = {
+export const Text: Story = {
   args: {
     text: "link",
     onClick: () => console.log("Button")

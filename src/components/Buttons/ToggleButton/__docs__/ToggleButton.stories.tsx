@@ -8,7 +8,7 @@ import {
 import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof ToggleButton> = {
-  title: "ToggleButton",
+  title: "Components/Buttons/Toggle Buttons",
   component: ToggleButton,
   decorators: [
     (Story) => (
@@ -23,19 +23,19 @@ export default meta;
 
 type Story = StoryObj<typeof ToggleButton>;
 
-export const AlignLeft: Story = {
+export const AlignLeftToggle: Story = {
   args: {
     children: <TextAlignLeftIcon />
   }
 };
 
-export const AlignCenter: Story = {
+export const AlignCenterToggle: Story = {
   args: {
     children: <TextAlignCenterIcon />
   }
 };
 
-export const AlignRight: Story = {
+export const AlignRightToggle: Story = {
   args: {
     children: <TextAlignRightIcon />
   }

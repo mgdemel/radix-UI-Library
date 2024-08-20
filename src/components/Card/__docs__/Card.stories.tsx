@@ -4,7 +4,7 @@ import { Heading, Text } from "@/components/TextContent";
 import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof Card> = {
-  title: "Card",
+  title: "Components/Card",
   component: Card,
   decorators: [
     (Story) => (

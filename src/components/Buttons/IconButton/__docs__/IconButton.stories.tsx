@@ -9,7 +9,7 @@ import {
 import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof IconButton> = {
-  title: "IconButton",
+  title: "Components/Buttons/Icon Buttons",
   component: IconButton,
   decorators: [
     (Story) => (
@@ -39,28 +39,28 @@ const defaultArgs = {
   onClick: () => console.log("Button")
 };
 
-export const ArrowUp: Story = {
+export const ArrowUpIconButton: Story = {
   args: {
     ...defaultArgs,
     children: <ArrowUpIcon />
   }
 };
 
-export const ArrowDown: Story = {
+export const ArrowDownIconButton: Story = {
   args: {
     ...defaultArgs,
     children: <ArrowDownIcon />
   }
 };
 
-export const ArrowLeft: Story = {
+export const ArrowLeftIconButton: Story = {
   args: {
     ...defaultArgs,
     children: <ArrowLeftIcon />
   }
 };
 
-export const ArrowRight: Story = {
+export const ArrowRightIconButton: Story = {
   args: {
     ...defaultArgs,
     children: <ArrowRightIcon />

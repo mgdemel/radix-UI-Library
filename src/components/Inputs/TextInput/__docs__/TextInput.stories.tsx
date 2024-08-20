@@ -3,7 +3,7 @@ import { TextInput } from "../TextInput";
 import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof TextInput> = {
-  title: "TextInput",
+  title: "Components/Inputs",
   component: TextInput,
   decorators: [
     (Story) => (

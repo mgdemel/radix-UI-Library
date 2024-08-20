@@ -3,7 +3,7 @@ import { Chip } from "../Chip";
 import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof Chip> = {
-  title: "Chip",
+  title: "Components/Chip",
   component: Chip,
   decorators: [
     (Story) => (

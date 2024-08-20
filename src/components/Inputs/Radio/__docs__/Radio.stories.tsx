@@ -3,7 +3,7 @@ import { Radio } from "../Radio";
 import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof Radio> = {
-  title: "Radio",
+  title: "Components/Inputs",
   component: Radio,
   decorators: [
     (Story) => (

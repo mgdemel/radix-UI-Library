@@ -3,7 +3,7 @@ import { ArrowToggleIcon } from "../ArrowToggleIcon";
 import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof ArrowToggleIcon> = {
-  title: "Interactive Icons",
+  title: "Components/Interactive Icons",
   component: ArrowToggleIcon,
   decorators: [
     (Story) => (

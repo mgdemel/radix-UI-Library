@@ -1,9 +1,10 @@
+import { DetailSize } from "@/utils/types";
 import { Radio as RadixRadio, Text as RadixText } from "@radix-ui/themes";
 
 type Props = {
   value: string;
   label: string;
-  size?: "1" | "2" | "3";
+  size?: DetailSize;
 };
 export const Radio = ({ value, label, size }: Props) => {
   return (

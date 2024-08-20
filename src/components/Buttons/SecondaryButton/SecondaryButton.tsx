@@ -1,8 +1,9 @@
+import { ButtonSize } from "@/utils/types";
 import { Button } from "@radix-ui/themes";
 
 type Props = {
   text: string;
-  size?: "1" | "2" | "3" | "4";
+  size?: ButtonSize;
   customStyles?: string;
   onClick: () => void;
 };

@@ -1,11 +1,12 @@
+import { TextAlign, TextSize, TextTag, TextWeight } from "@/utils/types";
 import { Text as RadixText } from "@radix-ui/themes";
 
 type Props = {
   content: string;
-  type: "span" | "div" | "label" | "p";
-  size?: "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9";
-  weight?: "light" | "regular" | "medium" | "bold";
-  align?: "left" | "center" | "right";
+  type: TextTag;
+  size?: TextSize;
+  weight?: TextWeight;
+  align?: TextAlign;
   customStyles?: string;
 };
 

@@ -1,7 +1,7 @@
-import { Theme } from "@radix-ui/themes";
 import React from "react";
 import "./globals.css";
 import { ContainerProvider } from "@/context";
+import { Theme } from "@/components/Theme";
 
 export default function RootLayout({
   children
@@ -11,7 +11,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body suppressHydrationWarning={true}>
-        <Theme accentColor="crimson" grayColor="sand" radius="large">
+        <Theme>
           <ContainerProvider>{children}</ContainerProvider>
         </Theme>
       </body>

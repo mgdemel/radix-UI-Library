@@ -3,10 +3,14 @@
     "next/core-web-vitals",
     "eslint:recommended",
     "prettier",
-    "plugin:sonarjs/recommended-legacy"
+    "plugin:sonarjs/recommended-legacy",
+    "plugin:storybook/recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["unused-imports", "sonarjs"],
+  "plugins": [
+    "unused-imports",
+    "sonarjs"
+  ],
   "globals": {
     "JSX": "readonly"
   }

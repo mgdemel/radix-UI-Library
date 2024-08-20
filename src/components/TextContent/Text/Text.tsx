@@ -2,7 +2,7 @@ import { TextAlign, TextSize, TextTag, TextWeight } from "@/utils/types";
 import { Text as RadixText } from "@radix-ui/themes";
 
 type Props = {
-  content: string;
+  text: string;
   type: TextTag;
   size?: TextSize;
   weight?: TextWeight;
@@ -11,7 +11,7 @@ type Props = {
 };
 
 export const Text = ({
-  content,
+  text,
   type,
   size,
   weight,
@@ -27,7 +27,7 @@ export const Text = ({
       align={align}
       className={`${baseStyles + customStyles}`}
     >
-      {content}
+      {text}
     </RadixText>
   );
 };

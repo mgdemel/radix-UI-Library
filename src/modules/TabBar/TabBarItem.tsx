@@ -7,6 +7,6 @@ type Props = {
   children: React.ReactNode;
 };
 
-export const TabItem = ({ value, children }: Props) => {
+export const TabBarItem = ({ value, children }: Props) => {
   return <Tabs.Content value={value}>{children}</Tabs.Content>;
 };

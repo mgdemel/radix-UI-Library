@@ -30,7 +30,7 @@ export const card: Story = {
     children: (
       <>
         <Heading level="h2" size="6" text="Card Heading" />
-        <Text content="Card paragraph" type="p" size="4" />
+        <Text text="Card paragraph" type="p" size="4" />
       </>
     )
   }

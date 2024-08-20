@@ -81,7 +81,7 @@ export default function Home() {
         </ModalTrigger>
         <ModalContent modalTitle="modal">
           <Heading level="h2" size="6" text="Card Heading" customStyles="p-2" />
-          <Text content="Card paragraph" type="p" size="4" customStyles="p-2" />
+          <Text text="Card paragraph" type="p" size="4" customStyles="p-2" />
           <div className="flex justify-between px-2 py-4">
             <IconButton size="3" onClick={() => console.log(tempStr)}>
               <ArrowUpIcon />
@@ -119,13 +119,13 @@ export default function Home() {
       <Card>
         <TabBar label="tab bar">
           <TabItem value="tab 1">
-            <Text content="Here is a paragraph in tab 1" type="p" />
+            <Text text="Here is a paragraph in tab 1" type="p" />
           </TabItem>
           <TabItem value="tab 2">
-            <Text content="Here is a paragraph in tab 2" type="p" />
+            <Text text="Here is a paragraph in tab 2" type="p" />
           </TabItem>
           <TabItem value="tab 3">
-            <Text content="Here is a paragraph in tab 3" type="p" />
+            <Text text="Here is a paragraph in tab 3" type="p" />
           </TabItem>
         </TabBar>
       </Card>
@@ -161,7 +161,7 @@ export default function Home() {
       </div>
 
       <footer className="p-4 text-center w-full">
-        <Text type="p" content="© 2024 copyright." size="1" />
+        <Text type="p" text="© 2024 copyright." size="1" />
         <nav className="mt-2">
           <TextButton
             text="Privacy Policy"

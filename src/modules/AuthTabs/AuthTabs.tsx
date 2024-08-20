@@ -21,13 +21,13 @@ export const AuthTabs = () => {
           <Tabs.Trigger value="register">Register</Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content value="login">
-          <Text content="Log into your account here." type="p" />
+          <Text text="Log into your account here." type="p" />
           <div className="flex justify-end">
             <PrimaryButton text="Login" onClick={() => console.log(tempStr)} />
           </div>
         </Tabs.Content>
         <Tabs.Content value="register">
-          <Text content="Register here." type="p" />
+          <Text text="Register here." type="p" />
           <div className="flex justify-end">
             <PrimaryButton
               text="Register"

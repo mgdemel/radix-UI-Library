@@ -1,14 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { TextButton } from "../TextButton";
-import { Theme } from "@radix-ui/themes";
-import React from "react";
+import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof TextButton> = {
   title: "TextButton",
   component: TextButton,
   decorators: [
     (Story) => (
-      <Theme accentColor="crimson" grayColor="sand" radius="large">
+      <Theme>
         <Story />
       </Theme>
     )

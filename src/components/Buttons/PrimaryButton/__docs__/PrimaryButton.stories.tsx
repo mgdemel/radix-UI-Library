@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { PrimaryButton } from "../PrimaryButton";
-import { Theme } from "@radix-ui/themes";
+import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof PrimaryButton> = {
   title: "PrimaryButton",
   component: PrimaryButton,
   decorators: [
     (Story) => (
-      <Theme accentColor="crimson" grayColor="sand" radius="large">
+      <Theme>
         <Story />
       </Theme>
     )

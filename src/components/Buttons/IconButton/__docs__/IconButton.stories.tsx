@@ -6,14 +6,14 @@ import {
   ArrowRightIcon,
   ArrowUpIcon
 } from "@radix-ui/react-icons";
-import { Theme } from "@radix-ui/themes";
+import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof IconButton> = {
   title: "IconButton",
   component: IconButton,
   decorators: [
     (Story) => (
-      <Theme accentColor="crimson" grayColor="sand" radius="large">
+      <Theme>
         <Story />
       </Theme>
     )

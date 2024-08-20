@@ -1,18 +1,18 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { ToggleButton } from "../ToggleButton";
-import { Theme } from "@radix-ui/themes";
 import {
   TextAlignCenterIcon,
   TextAlignLeftIcon,
   TextAlignRightIcon
 } from "@radix-ui/react-icons";
+import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof ToggleButton> = {
   title: "ToggleButton",
   component: ToggleButton,
   decorators: [
     (Story) => (
-      <Theme accentColor="crimson" grayColor="sand" radius="large">
+      <Theme>
         <Story />
       </Theme>
     )

@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Checkbox } from "../Checkbox";
-import { Theme } from "@radix-ui/themes";
+import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof Checkbox> = {
   title: "Checkbox",
   component: Checkbox,
   decorators: [
     (Story) => (
-      <Theme accentColor="crimson" grayColor="sand" radius="large">
+      <Theme>
         <Story />
       </Theme>
     )

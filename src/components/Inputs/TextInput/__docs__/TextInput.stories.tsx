@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { TextInput } from "../TextInput";
-import { Theme } from "@radix-ui/themes";
+import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof TextInput> = {
   title: "TextInput",
   component: TextInput,
   decorators: [
     (Story) => (
-      <Theme accentColor="crimson" grayColor="sand" radius="large">
+      <Theme>
         <Story />
       </Theme>
     )
@@ -18,5 +18,5 @@ export default meta;
 type Story = StoryObj<typeof TextInput>;
 
 export const textInput: Story = {
-  args: {}
+  args: { placeholder: "placeholder" }
 };

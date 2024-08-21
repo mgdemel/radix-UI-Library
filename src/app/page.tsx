@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 w-full">
       <div className="my-12 w-1/3">
-        <TabBar label="tab bar">
+        <TabBar defaultValue="tab 1" label="tab bar">
           <TabBarItem value="tab 1">
             <Text text="Here is a paragraph in tab 1" type="p" />
           </TabBarItem>

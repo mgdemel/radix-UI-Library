@@ -1,6 +1,6 @@
+import { Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Radio } from "../Radio";
-import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof Radio> = {
   title: "Components/Inputs",

@@ -1,6 +1,6 @@
+import { Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Checkbox } from "../Checkbox";
-import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof Checkbox> = {
   title: "Components/Inputs",

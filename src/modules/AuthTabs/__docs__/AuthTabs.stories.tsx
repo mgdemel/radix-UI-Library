@@ -1,4 +1,4 @@
-import { Theme } from "@/components/Theme";
+import { Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
 import { AuthTabs } from "../AuthTabs";
 

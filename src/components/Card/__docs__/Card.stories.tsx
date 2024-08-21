@@ -1,7 +1,7 @@
+import { Theme } from "@/components";
+import { Heading, Text } from "@/components/TextContent";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Card } from "../Card";
-import { Heading, Text } from "@/components/TextContent";
-import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof Card> = {
   title: "Components/Card",

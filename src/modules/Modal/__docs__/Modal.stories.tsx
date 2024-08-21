@@ -5,9 +5,9 @@ import {
   SecondaryButton,
   Text,
   TextButton,
-  TextInput
+  TextInput,
+  Theme
 } from "@/components";
-import { Theme } from "@/components/Theme";
 import {
   ArrowBottomRightIcon,
   ArrowDownIcon,

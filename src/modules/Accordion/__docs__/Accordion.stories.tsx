@@ -1,5 +1,4 @@
-import { Text } from "@/components";
-import { Theme } from "@/components/Theme";
+import { Text, Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Accordion } from "../Accordion";
 import {

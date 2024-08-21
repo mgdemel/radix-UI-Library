@@ -1,5 +1,4 @@
-import { Theme } from "@/components";
-import { Heading, Text } from "@/components/TextContent";
+import { Heading, Text, Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Card } from "../Card";
 

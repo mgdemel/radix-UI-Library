@@ -9,7 +9,6 @@ import {
   TextInput
 } from "@/components";
 import {
-  AuthTabs,
   Modal,
   ModalContent,
   ModalTrigger,
@@ -67,8 +66,6 @@ export default function Home() {
           </div>
         </ModalContent>
       </Modal>
-
-      <AuthTabs />
 
       <div className="my-12 w-1/3">
         <TabBar label="tab bar">

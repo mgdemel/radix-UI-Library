@@ -9,10 +9,6 @@ import {
   TextInput
 } from "@/components";
 import {
-  Accordion,
-  AccordionItem,
-  AccordionItemContent,
-  AccordionItemTrigger,
   AuthTabs,
   Modal,
   ModalContent,
@@ -90,19 +86,6 @@ export default function Home() {
 
       <div className="my-12 w-full">
         <CallToActionBanner />
-      </div>
-
-      <div className="my-12 w-full">
-        <Accordion itemId="accordion-1" type="single">
-          <AccordionItem itemId="item-1">
-            <AccordionItemTrigger>
-              <Text type="p" text="accordion header" />
-            </AccordionItemTrigger>
-            <AccordionItemContent>
-              <Text type="p" text="accordion content" />
-            </AccordionItemContent>
-          </AccordionItem>
-        </Accordion>
       </div>
     </main>
   );

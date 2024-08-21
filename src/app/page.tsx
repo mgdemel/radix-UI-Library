@@ -1,23 +1,26 @@
 "use client";
 import {
   Heading,
+  IconButton,
+  PrimaryButton,
+  SecondaryButton,
   Text,
   TextButton,
-  IconButton,
-  TextInput,
-  PrimaryButton,
-  SecondaryButton
+  TextInput
 } from "@/components";
 import {
   Accordion,
+  AccordionItem,
+  AccordionItemContent,
+  AccordionItemTrigger,
   AuthTabs,
-  TabBar,
-  TabBarItem,
   Modal,
   ModalContent,
-  ModalTrigger
-} from ".././modules";
-import { CallToActionBanner } from ".././sections";
+  ModalTrigger,
+  TabBar,
+  TabBarItem
+} from "@/modules";
+import { CallToActionBanner } from "@/sections";
 import {
   ArrowBottomRightIcon,
   ArrowDownIcon,
@@ -26,24 +29,6 @@ import {
 } from "@radix-ui/react-icons";
 
 export default function Home() {
-  const accordionItems = [
-    {
-      id: "item 1",
-      header: "Item 1",
-      content: "Here is the content hiding in item 1"
-    },
-    {
-      id: "item 2",
-      header: "Item 2",
-      content: "Here is the content hiding in item 2"
-    },
-    {
-      id: "item 3",
-      header: "Item 3",
-      content: "Here is the content hiding in item 3"
-    }
-  ];
-
   const tempStr = "I am clicked!";
 
   return (
@@ -108,7 +93,16 @@ export default function Home() {
       </div>
 
       <div className="my-12 w-full">
-        <Accordion items={accordionItems} />
+        <Accordion itemId="accordion-1" type="single">
+          <AccordionItem itemId="item-1">
+            <AccordionItemTrigger>
+              <Text type="p" text="accordion header" />
+            </AccordionItemTrigger>
+            <AccordionItemContent>
+              <Text type="p" text="accordion content" />
+            </AccordionItemContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     </main>
   );

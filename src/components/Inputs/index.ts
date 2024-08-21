@@ -1,3 +1,4 @@
-export { Checkbox } from "./Checkbox";
-export { TextInput } from "./TextInput";
-export { Radio } from "./Radio";
+export * from "./Checkbox";
+export * from "./Radio";
+export * from "./TextInput";
+

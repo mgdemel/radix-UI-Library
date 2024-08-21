@@ -1,11 +1,11 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { ToggleButton } from "../ToggleButton";
+import { Theme } from "@/components";
 import {
   TextAlignCenterIcon,
   TextAlignLeftIcon,
   TextAlignRightIcon
 } from "@radix-ui/react-icons";
-import { Theme } from "@/components/Theme";
+import type { Meta, StoryObj } from "@storybook/react";
+import { ToggleButton } from "../ToggleButton";
 
 const meta: Meta<typeof ToggleButton> = {
   title: "Components/Buttons/Toggle Buttons",

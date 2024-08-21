@@ -1,6 +1,6 @@
+import { Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
 import { TextInput } from "../TextInput";
-import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof TextInput> = {
   title: "Components/Inputs",

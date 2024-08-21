@@ -1,6 +1,6 @@
+import { Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Chip } from "../Chip";
-import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof Chip> = {
   title: "Components/Chip",

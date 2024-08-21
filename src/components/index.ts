@@ -1,7 +1,9 @@
 export * from "./Buttons";
+export * from "./Card";
+export * from "./Chip";
 export * from "./Inputs";
 export * from "./InteractiveIcons";
-export * from "./TextContent";
 export * from "./Media";
-export { Card } from "./Card";
-export { Chip } from "./Chip";
+export * from "./TextContent";
+export * from "./Theme";
+

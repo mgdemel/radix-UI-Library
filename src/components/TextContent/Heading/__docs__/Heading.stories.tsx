@@ -1,6 +1,6 @@
+import { Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Heading } from "../Heading";
-import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof Heading> = {
   title: "Components/Text Content",

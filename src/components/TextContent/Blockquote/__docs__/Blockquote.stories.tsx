@@ -1,6 +1,6 @@
+import { Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Blockquote } from "../Blockquote";
-import { Theme } from "@/components/Theme";
 
 const meta: Meta<typeof Blockquote> = {
   title: "Components/Text Content",

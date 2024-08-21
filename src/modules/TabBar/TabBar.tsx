@@ -1,28 +1,23 @@
 "use client";
-import React from "react";
 import { Tabs } from "@radix-ui/themes";
+import React from "react";
+import { TabItem } from "./TabBarItem";
 
 type Props = {
+  defaultValue: string;
   label: string;
   children: React.ReactNode;
+  childValues?: string[];
 };
 
-interface ChildProps {
-  value: string;
-  children: React.ReactNode;
-}
-
-export const TabBar: React.FC<Props> = ({ label, children }) => {
-  const validChildren = React.Children.toArray(children).filter(
-    React.isValidElement
-  );
-  const childValues = validChildren.map((child) => {
-    const element = child as React.ReactElement<ChildProps>;
-    return element.props.value;
-  });
-
+export const TabBar = ({
+  defaultValue,
+  label,
+  children,
+  childValues = getChildrenValues(children)
+}: Props) => {
   return (
-    <Tabs.Root className="flex flex-col" defaultValue={childValues[0]}>
+    <Tabs.Root className="flex flex-col" defaultValue={defaultValue}>
       <Tabs.List
         color="crimson"
         highContrast
@@ -40,4 +35,14 @@ export const TabBar: React.FC<Props> = ({ label, children }) => {
       {children}
     </Tabs.Root>
   );
+};
+
+const getChildrenValues = (children: React.ReactNode) => {
+  const validChildren = React.Children.toArray(children).filter(
+    React.isValidElement
+  );
+  return validChildren.map((child) => {
+    const element = child as React.ReactElement<TabItem>;
+    return element.props.value;
+  });
 };

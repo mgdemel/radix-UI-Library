@@ -1,2 +1,3 @@
-export { TabBar } from "./TabBar";
-export { TabBarItem } from "./TabBarItem";
+export * from "./TabBar";
+export * from "./TabBarItem";
+

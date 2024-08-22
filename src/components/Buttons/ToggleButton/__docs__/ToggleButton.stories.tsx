@@ -1,15 +1,12 @@
-import { Theme } from "@/components";
-import {
-  TextAlignCenterIcon,
-  TextAlignLeftIcon,
-  TextAlignRightIcon
-} from "@radix-ui/react-icons";
+import { Theme, toggleButton } from "@/components";
+import { toggleVariants } from "@/utils/radixArgOptions";
+import { TextAlignLeftIcon } from "@radix-ui/react-icons";
+import { IconButton } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
-import { ToggleButton } from "../ToggleButton";
 
-const meta: Meta<typeof ToggleButton> = {
-  title: "Components/Buttons/Toggle Buttons",
-  component: ToggleButton,
+const meta: Meta<typeof IconButton> = {
+  title: "Components/Buttons",
+  component: IconButton,
 
   decorators: [
     (Story) => (
@@ -23,27 +20,20 @@ const meta: Meta<typeof ToggleButton> = {
       table: {
         disable: true
       }
+    },
+    variant: {
+      control: "radio",
+      options: toggleVariants
     }
   }
 };
 export default meta;
 
-type Story = StoryObj<typeof ToggleButton>;
+type Story = StoryObj<typeof IconButton>;
 
-export const AlignLeftToggle: Story = {
+export const ToggleButton: Story = {
   args: {
-    children: <TextAlignLeftIcon />
-  }
-};
-
-export const AlignCenterToggle: Story = {
-  args: {
-    children: <TextAlignCenterIcon />
-  }
-};
-
-export const AlignRightToggle: Story = {
-  args: {
-    children: <TextAlignRightIcon />
+    children: <TextAlignLeftIcon />,
+    variant: toggleButton(true)
   }
 };

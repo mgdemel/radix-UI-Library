@@ -4,7 +4,7 @@ import { Flex, Radio as RadixRadio, Text } from "@radix-ui/themes";
 type Props = {
   value: string;
   label: string;
-  size?: DetailSize;
+  size: DetailSize;
 };
 export const Radio = ({ value, label, size }: Props) => {
   return (

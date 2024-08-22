@@ -10,6 +10,7 @@ import { ToggleButton } from "../ToggleButton";
 const meta: Meta<typeof ToggleButton> = {
   title: "Components/Buttons/Toggle Buttons",
   component: ToggleButton,
+
   decorators: [
     (Story) => (
       <Theme>
@@ -17,7 +18,13 @@ const meta: Meta<typeof ToggleButton> = {
       </Theme>
     )
   ],
-  argTypes: {}
+  argTypes: {
+    children: {
+      table: {
+        disable: true
+      }
+    }
+  }
 };
 export default meta;
 

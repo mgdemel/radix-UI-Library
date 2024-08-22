@@ -6,7 +6,7 @@ type Props = {
 };
 
 export const Theme = ({ children }: Props) => (
-  <RadixTheme accentColor="crimson" grayColor="sand" radius="large">
+  <RadixTheme accentColor="crimson" grayColor="sand" radius="medium">
     {children}
   </RadixTheme>
 );

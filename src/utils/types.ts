@@ -30,8 +30,6 @@ export type Color =
 
 export type DetailSize = "1" | "2" | "3";
 
-export type Radius = "small" | "medium" | "large" | "full";
-
 export type TextAlign = "left" | "center" | "right";
 export type TextLevel = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 export type TextSize = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9";

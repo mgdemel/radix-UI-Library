@@ -12,7 +12,6 @@ export const PrimaryButton = ({ text, size, disabled, onClick }: Props) => {
   return (
     <Button
       size={size}
-      radius="medium"
       variant="solid"
       className={"font-semibold px-4 py-2"}
       onClick={onClick}

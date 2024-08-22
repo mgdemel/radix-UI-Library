@@ -1,10 +1,10 @@
 import { Theme } from "@/components";
+import { Link } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
-import { TextButton } from "../TextButton";
 
-const meta: Meta<typeof TextButton> = {
+const meta: Meta<typeof Link> = {
   title: "Components/Buttons",
-  component: TextButton,
+  component: Link,
   decorators: [
     (Story) => (
       <Theme>
@@ -13,6 +13,11 @@ const meta: Meta<typeof TextButton> = {
     )
   ],
   argTypes: {
+    children: {
+      table: {
+        disable: true
+      }
+    },
     onClick: {
       table: {
         disable: true
@@ -22,11 +27,12 @@ const meta: Meta<typeof TextButton> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof TextButton>;
+type Story = StoryObj<typeof Link>;
 
-export const Text: Story = {
+export const link: Story = {
   args: {
-    text: "link",
-    onClick: () => console.log("Button")
+    href: "#",
+    children: "text link",
+    onClick: () => console.log("Link")
   }
 };

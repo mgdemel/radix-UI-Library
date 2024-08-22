@@ -1,10 +1,10 @@
 import {
   Heading,
   IconButton,
+  OutlinedButton,
   PrimaryButton,
   SecondaryButton,
   Text,
-  TextButton,
   TextInput,
   Theme
 } from "@/components";
@@ -46,7 +46,10 @@ export const modal: Story = {
     children: (
       <>
         <ModalTrigger>
-          <TextButton text="Open modal"></TextButton>
+          <OutlinedButton
+            text="Open modal"
+            onClick={() => console.log(tempStr)}
+          />
         </ModalTrigger>
         <ModalContent modalTitle="modal">
           <Heading level="h2" size="6" text="Card Heading" customStyles="p-2" />

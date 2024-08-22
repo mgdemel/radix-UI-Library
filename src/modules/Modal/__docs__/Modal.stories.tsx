@@ -1,6 +1,5 @@
 import {
   Heading,
-  IconButton,
   OutlinedButton,
   PrimaryButton,
   SecondaryButton,
@@ -14,6 +13,7 @@ import {
   ArrowTopLeftIcon,
   ArrowUpIcon
 } from "@radix-ui/react-icons";
+import { IconButton } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Modal, ModalContent, ModalTrigger } from "../Modal";
 

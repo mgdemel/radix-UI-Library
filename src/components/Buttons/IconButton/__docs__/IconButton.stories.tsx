@@ -1,15 +1,16 @@
 import { Theme } from "@/components";
 import {
-  ArrowDownIcon,
-  ArrowLeftIcon,
-  ArrowRightIcon,
-  ArrowUpIcon
-} from "@radix-ui/react-icons";
+  buttonSizes,
+  colors,
+  radiusOptions,
+  variants
+} from "@/utils/radixArgOptions";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { IconButton } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof IconButton> = {
-  title: "Components/Buttons/Icon Buttons",
+  title: "Components/Buttons",
   component: IconButton,
   decorators: [
     (Story) => (
@@ -23,6 +24,22 @@ const meta: Meta<typeof IconButton> = {
       table: {
         disable: true
       }
+    },
+    color: {
+      control: "select",
+      options: colors
+    },
+    size: {
+      control: "radio",
+      options: buttonSizes
+    },
+    variant: {
+      control: "select",
+      options: variants
+    },
+    radius: {
+      control: "select",
+      options: radiusOptions
     }
   }
 };
@@ -30,25 +47,7 @@ export default meta;
 
 type Story = StoryObj<typeof IconButton>;
 
-export const ArrowUpIconButton: Story = {
-  args: {
-    children: <ArrowUpIcon />
-  }
-};
-
-export const ArrowDownIconButton: Story = {
-  args: {
-    children: <ArrowDownIcon />
-  }
-};
-
-export const ArrowLeftIconButton: Story = {
-  args: {
-    children: <ArrowLeftIcon />
-  }
-};
-
-export const ArrowRightIconButton: Story = {
+export const iconButton: Story = {
   args: {
     children: <ArrowRightIcon />
   }

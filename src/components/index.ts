@@ -1,5 +1,4 @@
 export * from "./Buttons";
-export * from "./Chip";
 export * from "./Inputs";
 export * from "./InteractiveIcons";
 export * from "./Media";

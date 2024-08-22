@@ -1,6 +1,6 @@
 import { Heading, Text, Theme } from "@/components";
+import { Card } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Card } from "../Card";
 
 const meta: Meta<typeof Card> = {
   title: "Components/Card",

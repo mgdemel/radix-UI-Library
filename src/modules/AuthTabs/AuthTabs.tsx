@@ -1,7 +1,6 @@
 "use client";
-import React from "react";
-import { Card, PrimaryButton, Text } from "@/components";
-import { Tabs } from "@radix-ui/themes";
+import { PrimaryButton, Text } from "@/components";
+import { Card, Tabs } from "@radix-ui/themes";
 
 export const AuthTabs = () => {
   const tempStr = "I am clicked!";

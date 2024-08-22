@@ -1,11 +1,11 @@
-import { Button, Heading, Text, TextInput, Theme } from "@/components";
+import { Button, Heading, Text, Theme } from "@/components";
 import {
   ArrowBottomRightIcon,
   ArrowDownIcon,
   ArrowTopLeftIcon,
   ArrowUpIcon
 } from "@radix-ui/react-icons";
-import { IconButton } from "@radix-ui/themes";
+import { IconButton, TextArea } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Modal, ModalContent, ModalTrigger } from "../Modal";
 
@@ -62,7 +62,7 @@ export const modal: Story = {
             </IconButton>
           </div>
           <div className="px-2 pb-4">
-            <TextInput placeholder="tell us a bit more..." />
+            <TextArea placeholder="tell us a bit more..." />
           </div>
           <div className="flex flex-row justify-between p-2">
             <Button

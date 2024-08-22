@@ -1,10 +1,10 @@
 import { Theme } from "@/components";
+import { TextArea } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
-import { TextInput } from "../TextInput";
 
-const meta: Meta<typeof TextInput> = {
+const meta: Meta<typeof TextArea> = {
   title: "Components/Inputs",
-  component: TextInput,
+  component: TextArea,
   decorators: [
     (Story) => (
       <Theme>
@@ -15,8 +15,8 @@ const meta: Meta<typeof TextInput> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof TextInput>;
+type Story = StoryObj<typeof TextArea>;
 
-export const textInput: Story = {
+export const text: Story = {
   args: { placeholder: "placeholder" }
 };

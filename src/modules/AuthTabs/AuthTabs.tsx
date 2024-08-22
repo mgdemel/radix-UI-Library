@@ -1,6 +1,6 @@
 "use client";
-import { Button, Text } from "@/components";
-import { Card, Tabs } from "@radix-ui/themes";
+import { Button } from "@/components";
+import { Card, Tabs, Text } from "@radix-ui/themes";
 
 export const AuthTabs = () => {
   const tempStr = "I am clicked!";
@@ -20,7 +20,7 @@ export const AuthTabs = () => {
           <Tabs.Trigger value="register">Register</Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content value="login">
-          <Text text="Log into your account here." type="p" />
+          <Text>Log into your account here.</Text>
           <div className="flex justify-end">
             <Button
               text="Login"
@@ -30,7 +30,7 @@ export const AuthTabs = () => {
           </div>
         </Tabs.Content>
         <Tabs.Content value="register">
-          <Text text="Register here." type="p" />
+          <Text>Register your account here.</Text>
           <div className="flex justify-end">
             <Button
               text="Register"

@@ -1,4 +1,5 @@
-import { Text, Theme } from "@/components";
+import { Theme } from "@/components";
+import { Text } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
 import { TabBar } from "../TabBar";
 import { TabBarItem } from "../TabBarItem";
@@ -38,13 +39,13 @@ export const tabBar: Story = {
     children: (
       <>
         <TabBarItem value="tab 1">
-          <Text text="Here is a paragraph in tab 1" type="p" />
+          <Text> Here is a paragraph in tab 1</Text>
         </TabBarItem>
         <TabBarItem value="tab 2">
-          <Text text="Here is a paragraph in tab 2" type="p" />
+          <Text> Here is a paragraph in tab 2</Text>
         </TabBarItem>
         <TabBarItem value="tab 3">
-          <Text text="Here is a paragraph in tab 3" type="p" />
+          <Text> Here is a paragraph in tab 3</Text>
         </TabBarItem>
       </>
     )

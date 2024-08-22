@@ -1,5 +1,5 @@
-import { Heading, Text, Theme } from "@/components";
-import { Card } from "@radix-ui/themes";
+import { Theme } from "@/components";
+import { Card, Heading, Text } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof Card> = {
@@ -28,8 +28,10 @@ export const card: Story = {
   args: {
     children: (
       <>
-        <Heading level="h2" size="6" text="Card Heading" />
-        <Text text="Card paragraph" type="p" size="4" />
+        <Heading as="h2" size="6">
+          Card Heading
+        </Heading>
+        <Text>Card paragraph.</Text>
       </>
     )
   }

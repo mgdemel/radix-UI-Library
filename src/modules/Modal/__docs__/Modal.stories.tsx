@@ -1,11 +1,11 @@
-import { Button, Heading, Text, Theme } from "@/components";
+import { Button, Theme } from "@/components";
 import {
   ArrowBottomRightIcon,
   ArrowDownIcon,
   ArrowTopLeftIcon,
   ArrowUpIcon
 } from "@radix-ui/react-icons";
-import { IconButton, TextArea } from "@radix-ui/themes";
+import { Heading, IconButton, Text, TextArea } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Modal, ModalContent, ModalTrigger } from "../Modal";
 
@@ -45,8 +45,10 @@ export const modal: Story = {
           />
         </ModalTrigger>
         <ModalContent modalTitle="modal">
-          <Heading level="h2" size="6" text="Card Heading" customStyles="p-2" />
-          <Text text="Card paragraph" type="p" size="4" customStyles="p-2" />
+          <Heading as="h2" size="6">
+            modal heading
+          </Heading>
+          <Text> modal paragraph</Text>
           <div className="flex justify-between px-2 py-4">
             <IconButton size="3" onClick={() => console.log(tempStr)}>
               <ArrowUpIcon />

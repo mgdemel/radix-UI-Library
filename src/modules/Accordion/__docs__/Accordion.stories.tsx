@@ -1,4 +1,5 @@
-import { Text, Theme } from "@/components";
+import { Theme } from "@/components";
+import { Text } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Accordion } from "../Accordion";
 import {
@@ -36,26 +37,26 @@ export const accordion: Story = {
       <>
         <AccordionItem itemId="item-1">
           <AccordionItemTrigger>
-            <Text type="p" text="accordion header" />
+            <Text>accordion header</Text>
           </AccordionItemTrigger>
           <AccordionItemContent>
-            <Text type="p" text="accordion content" />
+            <Text>accordion content</Text>
           </AccordionItemContent>
         </AccordionItem>
         <AccordionItem itemId="item-2">
           <AccordionItemTrigger>
-            <Text type="p" text="accordion header" />
+            <Text>accordion header</Text>
           </AccordionItemTrigger>
           <AccordionItemContent>
-            <Text type="p" text="accordion content" />
+            <Text>accordion content</Text>
           </AccordionItemContent>
         </AccordionItem>
         <AccordionItem itemId="item-3">
           <AccordionItemTrigger>
-            <Text type="p" text="accordion header" />
+            <Text>accordion header</Text>
           </AccordionItemTrigger>
           <AccordionItemContent>
-            <Text type="p" text="accordion content" />
+            <Text>accordion content</Text>
           </AccordionItemContent>
         </AccordionItem>
       </>

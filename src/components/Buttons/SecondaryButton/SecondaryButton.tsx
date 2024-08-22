@@ -4,23 +4,20 @@ import { Button } from "@radix-ui/themes";
 type Props = {
   text: string;
   size?: ButtonSize;
-  customStyles?: string;
+  disabled?: boolean;
   onClick: () => void;
 };
 
-export const SecondaryButton = ({
-  text,
-  size,
-  customStyles,
-  onClick
-}: Props) => {
-  const baseStyles = "py-2 px-4 rounded font-medium ";
+export const SecondaryButton = ({ text, size, disabled, onClick }: Props) => {
   return (
     <Button
       size={size}
-      variant="surface"
-      className={`${baseStyles + customStyles}`}
+      radius="medium"
+      variant="soft"
+      className={"font-semibold px-4 py-2"}
       onClick={onClick}
+      disabled={disabled}
+      highContrast
     >
       {text}
     </Button>

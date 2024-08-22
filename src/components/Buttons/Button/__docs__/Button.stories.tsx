@@ -1,10 +1,10 @@
 import { Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
-import { SecondaryButton } from "../SecondaryButton";
+import { Button } from "../Button";
 
-const meta: Meta<typeof SecondaryButton> = {
+const meta: Meta<typeof Button> = {
   title: "Components/Buttons",
-  component: SecondaryButton,
+  component: Button,
   decorators: [
     (Story) => (
       <Theme>
@@ -22,11 +22,12 @@ const meta: Meta<typeof SecondaryButton> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof SecondaryButton>;
+type Story = StoryObj<typeof Button>;
 
-export const Secondary: Story = {
+export const button: Story = {
   args: {
     text: "submit",
+    type: "primary",
     onClick: () => console.log("Button")
   }
 };

@@ -1,4 +1,4 @@
-import { Text, PrimaryButton, Heading } from "@/components";
+import { Button, Heading, Text } from "@/components";
 
 export const CallToActionBanner = () => {
   const tempStr = "I am clicked!";
@@ -8,9 +8,10 @@ export const CallToActionBanner = () => {
       <div className="mx-auto flex-col flex items-center justify-center gap-4">
         <Heading level="h1" size="9" text="CTA Heading" />
         <Text size="6" type="p" text="CTA paragraph" />
-        <PrimaryButton
+        <Button
           size="4"
           text="CTA button"
+          type="primary"
           onClick={() => console.log(tempStr)}
         />
       </div>

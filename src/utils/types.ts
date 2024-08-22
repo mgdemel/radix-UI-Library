@@ -1,4 +1,5 @@
 export type ButtonSize = "1" | "2" | "3" | "4";
+export type ButtonType = "primary" | "secondary" | "outline";
 
 export type Color =
   | "gray"

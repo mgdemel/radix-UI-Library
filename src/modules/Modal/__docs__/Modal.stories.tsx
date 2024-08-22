@@ -1,12 +1,4 @@
-import {
-  Heading,
-  OutlinedButton,
-  PrimaryButton,
-  SecondaryButton,
-  Text,
-  TextInput,
-  Theme
-} from "@/components";
+import { Button, Heading, Text, TextInput, Theme } from "@/components";
 import {
   ArrowBottomRightIcon,
   ArrowDownIcon,
@@ -46,8 +38,9 @@ export const modal: Story = {
     children: (
       <>
         <ModalTrigger>
-          <OutlinedButton
+          <Button
             text="Open modal"
+            type="outline"
             onClick={() => console.log(tempStr)}
           />
         </ModalTrigger>
@@ -72,14 +65,16 @@ export const modal: Story = {
             <TextInput placeholder="tell us a bit more..." />
           </div>
           <div className="flex flex-row justify-between p-2">
-            <PrimaryButton
+            <Button
               size="3"
               text="submit"
+              type="primary"
               onClick={() => console.log(tempStr)}
             />
-            <SecondaryButton
+            <Button
               size="3"
               text="cancel"
+              type="secondary"
               onClick={() => console.log(tempStr)}
             />
           </div>

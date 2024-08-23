@@ -1,6 +1,7 @@
 "use client";
-import { ArrowToggleIcon } from "@/components";
 import * as RadixAccordion from "@radix-ui/react-accordion";
+import { ChevronDownIcon, ChevronUpIcon } from "@radix-ui/react-icons";
+import { Flex, Text } from "@radix-ui/themes";
 import { useState } from "react";
 type AccordionProps = {
   itemId: string;
@@ -22,13 +23,14 @@ export const AccordionItemTrigger = ({ children }: AccordionItemProps) => {
   const [isOpen, setOpen] = useState<boolean>(false);
   const toggleAccordion = () => setOpen((isOpen) => !isOpen);
   return (
-    <RadixAccordion.Header className="py-2 font-semibold">
-      <RadixAccordion.Trigger
-        className="align-end w-fit flex flex-row"
-        onClick={toggleAccordion}
-      >
-        {children}
-        <ArrowToggleIcon isOpen={isOpen} />
+    <RadixAccordion.Header>
+      <RadixAccordion.Trigger onClick={toggleAccordion}>
+        <Flex gap="1" align="center">
+          <Text as="span" trim="both" weight="medium" align="center">
+            {children}
+          </Text>
+          {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+        </Flex>
       </RadixAccordion.Trigger>
     </RadixAccordion.Header>
   );

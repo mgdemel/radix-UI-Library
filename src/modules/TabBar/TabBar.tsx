@@ -32,7 +32,7 @@ export const TabBar = ({
           </Tabs.Trigger>
         ))}
       </Tabs.List>
-      {children}
+      <div className="py-2">{children}</div>
     </Tabs.Root>
   );
 };

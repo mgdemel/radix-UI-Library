@@ -1,19 +1,11 @@
-import {
-  Heading,
-  IconButton,
-  PrimaryButton,
-  SecondaryButton,
-  Text,
-  TextButton,
-  TextInput,
-  Theme
-} from "@/components";
+import { Button, Theme } from "@/components";
 import {
   ArrowBottomRightIcon,
   ArrowDownIcon,
   ArrowTopLeftIcon,
   ArrowUpIcon
 } from "@radix-ui/react-icons";
+import { Heading, IconButton, Text, TextArea } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Modal, ModalContent, ModalTrigger } from "../Modal";
 
@@ -46,11 +38,17 @@ export const modal: Story = {
     children: (
       <>
         <ModalTrigger>
-          <TextButton text="Open modal"></TextButton>
+          <Button
+            text="Open modal"
+            type="outline"
+            onClick={() => console.log(tempStr)}
+          />
         </ModalTrigger>
         <ModalContent modalTitle="modal">
-          <Heading level="h2" size="6" text="Card Heading" customStyles="p-2" />
-          <Text text="Card paragraph" type="p" size="4" customStyles="p-2" />
+          <Heading as="h2" size="6">
+            modal heading
+          </Heading>
+          <Text> modal paragraph</Text>
           <div className="flex justify-between px-2 py-4">
             <IconButton size="3" onClick={() => console.log(tempStr)}>
               <ArrowUpIcon />
@@ -66,17 +64,19 @@ export const modal: Story = {
             </IconButton>
           </div>
           <div className="px-2 pb-4">
-            <TextInput placeholder="tell us a bit more..." />
+            <TextArea placeholder="tell us a bit more..." />
           </div>
           <div className="flex flex-row justify-between p-2">
-            <PrimaryButton
+            <Button
               size="3"
               text="submit"
+              type="primary"
               onClick={() => console.log(tempStr)}
             />
-            <SecondaryButton
+            <Button
               size="3"
               text="cancel"
+              type="secondary"
               onClick={() => console.log(tempStr)}
             />
           </div>

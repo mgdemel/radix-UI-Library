@@ -18,5 +18,5 @@ export default meta;
 type Story = StoryObj<typeof Radio>;
 
 export const radio: Story = {
-  args: { value: "value", label: "label" }
+  args: { value: "value", label: "label", size: "1" }
 };

@@ -1,1 +1,1 @@
-export * from "./CallToActionBanner";
+export * from "./Banners";

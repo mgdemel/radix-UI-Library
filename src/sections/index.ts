@@ -1,1 +1,2 @@
-export * from "./CallToActionBanner";
+export * from "./Banners";
+export * from "./Headers";

@@ -1,11 +1,11 @@
 import { Theme } from "@/components";
 import { colors, detailSizes, variants } from "@/utils/radixArgOptions";
-import { Badge } from "@radix-ui/themes";
+import { Badge as RadixBadge } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
 
-const meta: Meta<typeof Badge> = {
-  title: "Components/Badge",
-  component: Badge,
+const meta: Meta<typeof RadixBadge> = {
+  title: "Components",
+  component: RadixBadge,
   decorators: [
     (Story) => (
       <Theme>
@@ -30,8 +30,8 @@ const meta: Meta<typeof Badge> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof Badge>;
+type Story = StoryObj<typeof RadixBadge>;
 
-export const badge: Story = {
+export const Badge: Story = {
   args: { children: "label" }
 };

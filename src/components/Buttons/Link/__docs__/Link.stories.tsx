@@ -1,10 +1,10 @@
 import { Theme } from "@/components";
-import { Link } from "@radix-ui/themes";
+import { Link as RadixLink } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
 
-const meta: Meta<typeof Link> = {
+const meta: Meta<typeof RadixLink> = {
   title: "Components/Buttons",
-  component: Link,
+  component: RadixLink,
   decorators: [
     (Story) => (
       <Theme>
@@ -27,9 +27,9 @@ const meta: Meta<typeof Link> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof Link>;
+type Story = StoryObj<typeof RadixLink>;
 
-export const link: Story = {
+export const Link: Story = {
   args: {
     href: "#",
     children: "text link",

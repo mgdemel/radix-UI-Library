@@ -6,12 +6,12 @@ import {
   variants
 } from "@/utils/radixArgOptions";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { IconButton } from "@radix-ui/themes";
+import { IconButton as RadixIconButton } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
 
-const meta: Meta<typeof IconButton> = {
+const meta: Meta<typeof RadixIconButton> = {
   title: "Components/Buttons",
-  component: IconButton,
+  component: RadixIconButton,
   decorators: [
     (Story) => (
       <Theme>
@@ -45,9 +45,9 @@ const meta: Meta<typeof IconButton> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof IconButton>;
+type Story = StoryObj<typeof RadixIconButton>;
 
-export const iconButton: Story = {
+export const IconButton: Story = {
   args: {
     children: <ArrowRightIcon />
   }

@@ -1,10 +1,10 @@
 import { Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
-import { AuthTabs } from "../AuthTabs";
+import { AuthTabs as CustomAuthTabs } from "../AuthTabs";
 
-const meta: Meta<typeof AuthTabs> = {
-  title: "Modules/AuthTabs",
-  component: AuthTabs,
+const meta: Meta<typeof CustomAuthTabs> = {
+  title: "Modules",
+  component: CustomAuthTabs,
   decorators: [
     (Story) => (
       <Theme>
@@ -22,8 +22,8 @@ const meta: Meta<typeof AuthTabs> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof AuthTabs>;
+type Story = StoryObj<typeof CustomAuthTabs>;
 
-export const authTabs: Story = {
+export const AuthTabs: Story = {
   args: {}
 };

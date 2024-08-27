@@ -1,10 +1,10 @@
 import { Theme } from "@/components";
-import { Card, Heading, Text } from "@radix-ui/themes";
+import { Heading, Card as RadixCard, Text } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
 
-const meta: Meta<typeof Card> = {
+const meta: Meta<typeof RadixCard> = {
   title: "Components/Card",
-  component: Card,
+  component: RadixCard,
   decorators: [
     (Story) => (
       <Theme>
@@ -22,9 +22,9 @@ const meta: Meta<typeof Card> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof Card>;
+type Story = StoryObj<typeof RadixCard>;
 
-export const card: Story = {
+export const Card: Story = {
   args: {
     children: (
       <>

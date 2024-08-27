@@ -1,10 +1,10 @@
 import { Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Checkbox } from "../Checkbox";
+import { Checkbox as RadixCheckbox } from "../Checkbox";
 
-const meta: Meta<typeof Checkbox> = {
+const meta: Meta<typeof RadixCheckbox> = {
   title: "Components/Inputs",
-  component: Checkbox,
+  component: RadixCheckbox,
   decorators: [
     (Story) => (
       <Theme>
@@ -15,8 +15,8 @@ const meta: Meta<typeof Checkbox> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof Checkbox>;
+type Story = StoryObj<typeof RadixCheckbox>;
 
-export const checkbox: Story = {
+export const Checkbox: Story = {
   args: { label: "label", size: "1" }
 };

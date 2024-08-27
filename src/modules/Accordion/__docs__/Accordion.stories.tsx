@@ -1,16 +1,16 @@
 import { Theme } from "@/components";
 import { Text } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Accordion } from "../Accordion";
+import { Accordion as CustomAccordion } from "../Accordion";
 import {
   AccordionItem,
   AccordionItemContent,
   AccordionItemTrigger
 } from "../AccordionItem";
 
-const meta: Meta<typeof Accordion> = {
-  title: "Modules/Accordion",
-  component: Accordion,
+const meta: Meta<typeof CustomAccordion> = {
+  title: "Modules",
+  component: CustomAccordion,
   decorators: [
     (Story) => (
       <Theme>
@@ -28,9 +28,9 @@ const meta: Meta<typeof Accordion> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof Accordion>;
+type Story = StoryObj<typeof CustomAccordion>;
 
-export const accordion: Story = {
+export const Accordion: Story = {
   args: {
     itemId: "accordion-1",
     children: (

@@ -7,11 +7,11 @@ import {
 } from "@radix-ui/react-icons";
 import { Heading, IconButton, Text, TextArea } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Modal, ModalContent, ModalTrigger } from "../Modal";
+import { Modal as CustomModal, ModalContent, ModalTrigger } from "../Modal";
 
-const meta: Meta<typeof Modal> = {
-  title: "Modules/Modal",
-  component: Modal,
+const meta: Meta<typeof CustomModal> = {
+  title: "Modules",
+  component: CustomModal,
   decorators: [
     (Story) => (
       <Theme>
@@ -29,11 +29,11 @@ const meta: Meta<typeof Modal> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof Modal>;
+type Story = StoryObj<typeof CustomModal>;
 
 const tempStr = "clicked";
 
-export const modal: Story = {
+export const Modal: Story = {
   args: {
     children: (
       <>

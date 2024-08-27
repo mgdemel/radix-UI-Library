@@ -1,12 +1,12 @@
 import { Theme } from "@/components";
 import { Text } from "@radix-ui/themes";
 import type { Meta, StoryObj } from "@storybook/react";
-import { TabBar } from "../TabBar";
+import { TabBar as CustomTabBar } from "../TabBar";
 import { TabBarItem } from "../TabBarItem";
 
-const meta: Meta<typeof TabBar> = {
-  title: "Modules/TabBar",
-  component: TabBar,
+const meta: Meta<typeof CustomTabBar> = {
+  title: "Modules",
+  component: CustomTabBar,
   decorators: [
     (Story) => (
       <Theme>
@@ -29,9 +29,9 @@ const meta: Meta<typeof TabBar> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof TabBar>;
+type Story = StoryObj<typeof CustomTabBar>;
 
-export const tabBar: Story = {
+export const TabBar: Story = {
   args: {
     label: "TabBar label",
     defaultValue: "tab 1",

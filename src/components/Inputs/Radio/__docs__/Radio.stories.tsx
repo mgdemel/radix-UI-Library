@@ -1,10 +1,10 @@
 import { Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Radio } from "../Radio";
+import { Radio as RadixRadio } from "../Radio";
 
-const meta: Meta<typeof Radio> = {
+const meta: Meta<typeof RadixRadio> = {
   title: "Components/Inputs",
-  component: Radio,
+  component: RadixRadio,
   decorators: [
     (Story) => (
       <Theme>
@@ -15,8 +15,8 @@ const meta: Meta<typeof Radio> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof Radio>;
+type Story = StoryObj<typeof RadixRadio>;
 
-export const radio: Story = {
+export const Radio: Story = {
   args: { value: "value", label: "label", size: "1" }
 };

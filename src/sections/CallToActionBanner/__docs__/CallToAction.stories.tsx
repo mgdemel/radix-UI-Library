@@ -1,10 +1,10 @@
 import { Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
-import { CallToActionBanner } from "../CallToActionBanner";
+import { CallToActionBanner as CustomCTA } from "../CallToActionBanner";
 
-const meta: Meta<typeof CallToActionBanner> = {
-  title: "Sections/CallToActionBanner",
-  component: CallToActionBanner,
+const meta: Meta<typeof CustomCTA> = {
+  title: "Sections",
+  component: CustomCTA,
   decorators: [
     (Story) => (
       <Theme>
@@ -15,8 +15,8 @@ const meta: Meta<typeof CallToActionBanner> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof CallToActionBanner>;
+type Story = StoryObj<typeof CustomCTA>;
 
-export const callToActionBanner: Story = {
+export const CallToActionBanner: Story = {
   args: {}
 };

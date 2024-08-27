@@ -1,10 +1,10 @@
 import { Theme } from "@/components";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "../Button";
+import { Button as RadixButton } from "../Button";
 
-const meta: Meta<typeof Button> = {
+const meta: Meta<typeof RadixButton> = {
   title: "Components/Buttons",
-  component: Button,
+  component: RadixButton,
   decorators: [
     (Story) => (
       <Theme>
@@ -22,9 +22,9 @@ const meta: Meta<typeof Button> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof RadixButton>;
 
-export const button: Story = {
+export const Button: Story = {
   args: {
     text: "submit",
     type: "primary",

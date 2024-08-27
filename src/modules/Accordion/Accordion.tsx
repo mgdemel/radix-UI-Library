@@ -1,5 +1,6 @@
 "use client";
 import * as RadixAccordion from "@radix-ui/react-accordion";
+import React from "react";
 type AccordionProps = {
   type: "single" | "multiple";
   itemId: string;

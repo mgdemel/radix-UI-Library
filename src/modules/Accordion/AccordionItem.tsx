@@ -2,7 +2,7 @@
 import * as RadixAccordion from "@radix-ui/react-accordion";
 import { ChevronDownIcon, ChevronUpIcon } from "@radix-ui/react-icons";
 import { Flex, Text } from "@radix-ui/themes";
-import { useState } from "react";
+import React, { useState } from "react";
 type AccordionProps = {
   itemId: string;
   children: React.ReactNode;
